@@ -137,8 +137,8 @@ public class GameManager {
 			players = new ArrayList<Player>();
 						
 			// Players are created here
-			for (i = 0; i < playerNames.size(); i++) {
-				players.add(new Player(playerNames.get(i), 50 - (playerNames.size() * 5), i, isAI));
+			for (int i = 0; i < playerNames.size(); i++) {
+				players.add(new Player(playerNames.get(i), 50 - (playerNames.size() * 5)));
 			}
 
 			System.out.println("Starting deploy phase...");
